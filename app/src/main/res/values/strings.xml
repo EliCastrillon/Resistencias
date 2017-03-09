@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Resistencias</string>
+    <string name="tolerancia">Tolerancia</string>
+    <string name="ohm">Ohm</string>
+</resources>

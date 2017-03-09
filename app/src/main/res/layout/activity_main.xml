@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/resistencia"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.elicastrillon.resistencias.MainActivity">
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.20"
+    android:hint="@string/ohm"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+    android:id="@+id/texValor"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/tolerancia"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_weight="0.19"
+        android:id="@+id/texValorT"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="236dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/eNegro"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:background="@color/black"
+                android:onClick="onClick"
+                android:text="" />
+
+            <Button
+                android:id="@+id/eMarron"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:background="@color/maroon"
+                android:text=""
+                android:onClick="onClick"/>
+
+            <Button
+                android:id="@+id/eRojo"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:background="@color/red"
+                android:text=""
+                android:onClick="onClick"/>
+
+            <Button
+                android:id="@+id/eNaranjado"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:background="@color/orange"
+                android:text=""
+                android:onClick="onClick"/>
+
+            <Button
+                android:id="@+id/eAmarillo"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:background="@color/yellow"
+                android:onClick="onClick"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+
+
+            <Button
+                android:id="@+id/eVerdeClaro"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:background="@color/greenyellow"
+                android:onClick="onClick"/>
+
+            <Button
+                android:id="@+id/eAzul"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:background="@color/blue"
+                android:text=""
+                android:onClick="onClick"/>
+
+            <Button
+                android:id="@+id/ePurpura"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:background="@color/purple"
+                android:text=""
+                android:onClick="onClick"/>
+
+            <Button
+                android:id="@+id/eGris"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:text=""
+                android:background="#FFFCFDFD"
+                android:onClick="onClick"/>
+
+            <Button
+                android:id="@+id/eBlanco"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:text=""
+                android:background="@color/white"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="205dp"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+
+                android:layout_width="117dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:text="Tolerancia"
+                android:layout_weight="0.09"
+                />
+
+            <Button
+                android:id="@+id/eTMarron"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:background="@color/maroon"
+                android:text=""
+               />
+
+            <Button
+                android:id="@+id/eTRojo"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:background="@color/red"
+                android:text=""
+                />
+
+            <Button
+                android:id="@+id/eTDorado"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:text=""
+                android:background="#F1F7F797"
+                />
+
+            <Button
+                android:id="@+id/eTPlateado"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:text=""
+                android:background="#FFFCFBFB"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+        <Button
+            android:id="@+id/eCalcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text="Calcular"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/eLimpiar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text="Limpiar"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+
+  <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"></RelativeLayout>
+
+    <Button
+        android:id="@+id/eSalir"
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:text="Salir"
+        android:textColor="@color/black" />
+
+</LinearLayout>
